@@ -231,6 +231,7 @@ jobs:
       git pull
 
       cp -r $(Pipeline.Workspace)/puma/html/$(project_short_name) .
+      cd $(project_short_name)
 
       git add .
       git commit -m "Automatically updating web files for $(project_short_name)"
