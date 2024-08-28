@@ -19,7 +19,7 @@ resources:
     type: github
     endpoint: puma_gh_deployment
     name: OllyButters/puma
-    ref: refs/tags/v2.8
+    ref: refs/tags/v2.9
   
   # Where all the configs are (private repo)
   - repository: puma_configs
