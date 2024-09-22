@@ -186,6 +186,10 @@ jobs:
       cd config
       ln -s $(Pipeline.Workspace)/configs/$(config_file_name) config.ini
 
+      # Soft link to the about DataSHIELD html file
+      ln -s $(Pipeline.Workspace)/configs/about_DataSHIELD.html about_DataSHIELD.html
+
+
       cd ../source
       sudo ./papers.py
 
